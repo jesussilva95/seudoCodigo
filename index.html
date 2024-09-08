@@ -1,132 +1,158 @@
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Report</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Ejemplos de Pseudo-Clases Estructurales, Elementos y Estados</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container-principal">
-        <header>
-            <div class="logo"><h1>Contructora-Inmobiliaria Leal</h1></div>
-            <div class="header-image">
-                <img src="img/construc_leal_logo.jpg" alt="Logo Empresarial" id="logo-image">
-            </div>
-            
-            
-        </header>
-        <nav class="menu-buttons">
-            <button><a href="">Home</a></button>
-            <button><a href="index.html">Catalago</a></button>
-            <button><a href="">Products</a></button>
-            <button><a href="">A bout</a></button>
-            <button><a href="">Contacts</a></button>
-        </nav>
-        <div class="main">
-            <div class="sidebar">
-                
-                <div class="media-videos">
-                    <div>
-                        <video class="videos" src="vid/vid1.mp4" type="video/mp4" controls></video>
-                    </div>
-                    <div>
-                        <video class="videos" src="vid/vid2.mp4" type="video/mp4" controls></video>
-                    </div>
-                </div>
+    <h1>Ejemplos de Pseudo-Clases Estructurales, Elementos y Estados</h1>
 
-                <div class="category-list">
-                    <div>Apps</div>
-                    <div>Games</div>
-                    <div>Movies</div>
-                    <div>Books</div>
-                    <div>Newspapers</div>
-                </div>
-            </div>
-            <div id="buttons-catalogo">
-                <div class="buttons-cat">
-                    <button>Cabañas</button>
-                    <button>Casas</button>
-                    <button>Apartamentos</button>
-                    <button>Fincas</button>
-                    <button>Lotes</button>
-                </div>
-    
-                <div class="catalog">
-                    <h1 class="catalog-title">Informe de Productos</h1>
-                    <div class="catalog-items">
-                        <div class="catalog-item">
-                            <h2>Productos Más Vendidos</h2>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Nombre del Producto</th>
-                                        <th>Cantidad Vendida</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Producto A</td>
-                                        <td>150</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Producto B</td>
-                                        <td>120</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Producto C</td>
-                                        <td>100</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="catalog-item">
-                            <h2>Productos Menos Vendidos</h2>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Nombre del Producto</th>
-                                        <th>Cantidad Vendida</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Producto X</td>
-                                        <td>5</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Producto Y</td>
-                                        <td>8</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Producto Z</td>
-                                        <td>12</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Pseudo-Clases Estructurales -->
+    <h2>Pseudo-Clases Estructurales - Tablas y Listas</h2>
+    <div class="contenedor">
+        <!-- nth-child(odd) con una tabla -->
+        <div class="item nth-child-odd">
+            <h3>:nth-child(odd) en una tabla</h3>
+            <table>
+                <tr><td>Fila 1</td></tr>
+                <tr><td>Fila 2</td></tr>
+                <tr><td>Fila 3</td></tr>
+                <tr><td>Fila 4</td></tr>
+                <tr><td>Fila 5</td></tr>
+            </table>
+            <p>Selecciona las filas impares de la tabla.</p>
         </div>
-    
-    </div>
-    <footer class="footer">
-        <div class="footer-text">
-            <p class="cpyright">&copy Copyright 2024 Constructora-Inbobiliaria Leal</p> 
-        </div>
-        <div class="footer-botons">
-            <button>Home</button>
-            <button>Apps</button>
-            <button>Games</button>
-            <button>Movies</button>
-            <button>Books</button>
-        </div>
-    </footer>
-    </div>
-    
 
+        <!-- nth-child(even) en una lista -->
+        <div class="item nth-child-even">
+            <h3>:nth-child(even) en una lista</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+            </ul>
+            <p>Selecciona los elementos pares de la lista.</p>
+        </div>
+
+        <!-- nth-child(n) con párrafos -->
+        <div class="item nth-child-n">
+            <h3>:nth-child(3) en párrafos</h3>
+            <div class="texto">
+                <p>Párrafo 1</p>
+                <p>Párrafo 2</p>
+                <p>Párrafo 3</p>
+            </div>
+            <p>Selecciona el tercer párrafo en el contenedor.</p>
+        </div>
+
+        <!-- nth-of-type(n) en una lista -->
+        <div class="item nth-of-type">
+            <h3>:nth-of-type(2) en una lista</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+            <p>Selecciona el segundo elemento de la lista ordenada.</p>
+        </div>
+
+        <!-- nth-last-child(n) en un contenedor de divs -->
+        <div class="item nth-last-child">
+            <h3>:nth-last-child(2) en un contenedor de divs</h3>
+            <div class="contenedor-divs">
+                <div>Div 1</div>
+                <div>Div 2</div>
+                <div>Div 3</div>
+            </div>
+            <p>Selecciona el segundo último div en el contenedor.</p>
+        </div>
+
+        <!-- nth-last-of-type(n) en un contenedor de divs -->
+        <div class="item nth-last-of-type">
+            <h3>:nth-last-of-type(2) en un contenedor de divs</h3>
+            <div class="contenedor-divs">
+                <div>Div A</div>
+                <div>Div B</div>
+                <div>Div C</div>
+            </div>
+            <p>Selecciona el segundo último div del mismo tipo.</p>
+        </div>
+    </div>
+
+    <!-- Pseudo-Elementos -->
+    <h2>Ejemplos de Pseudo-Elementos</h2>
+    <div class="contenedor">
+        <div class="recuadro">
+            <p class="before-example">Ejemplo de pseudo-elemento ::before.</p>
+        </div>
+        <div class="recuadro">
+            <p class="after-example">Ejemplo de pseudo-elemento ::after.</p>
+        </div>
+        <div class="recuadro">
+            <p class="first-line-example">Esta es una demostración del pseudo-elemento ::first-line.</p>
+        </div>
+        <div class="recuadro">
+            <p class="first-letter-example">Mira cómo cambia solo la primera letra con el pseudo-elemento ::first-letter.</p>
+        </div>
+        <div class="recuadro">
+            <p class="selection-example">Selecciona cualquier parte de este texto para ver el pseudo-elemento ::selection.</p>
+        </div>
+        <div class="recuadro">
+            <input type="text" placeholder="Pseudo-elemento ::placeholder">
+        </div>
+    </div>
+
+    <!-- Pseudo-Clases de Estado -->
+    <h2>Ejemplos de Pseudo-Clases de Estado</h2>
+    <div class="contenedor">
+        <div class="item">
+            <h3>:hover</h3>
+            <button class="hover-boton">Pasa el ratón</button>
+        </div>
+        <div class="item">
+            <h3>:active</h3>
+            <button class="active-boton">Haz clic</button>
+        </div>
+        <div class="item">
+            <h3>:focus</h3>
+            <input type="text" class="focus-campo" placeholder="Haz clic aquí">
+        </div>
+        <div class="item">
+            <h3>:visited</h3>
+            <a href="#" class="enlace-visitado">Enlace visitado</a>
+        </div>
+        <div class="item">
+            <h3>:checked</h3>
+            <input type="checkbox" id="opcion1" checked>
+            <label for="opcion1">Checkbox seleccionado</label>
+        </div>
+        <div class="item">
+            <h3>:disabled</h3>
+            <button class="boton-deshabilitado" disabled>Deshabilitado</button>
+        </div>
+        <div class="item">
+            <h3>:enabled</h3>
+            <button class="boton-habilitado">Habilitado</button>
+        </div>
+        <div class="item">
+            <h3>:invalid</h3>
+            <input type="email" class="campo-invalido" value="correo@inválido">
+        </div>
+        <div class="item">
+            <h3>:default</h3>
+            <input type="radio" name="radio-grupo" checked>
+            <label>Radio predeterminado</label>
+        </div>
+        <div class="item">
+            <h3>:empty</h3>
+            <div class="vacio"></div>
+        </div>
+    </div>
 </body>
 </html>
