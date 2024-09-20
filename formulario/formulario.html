@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesFormulario.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="respuesta.html" method="get" target="_blank">
+        <fieldset>
+            <legend>Formulario Prueba</legend>
+            <div>
+                <label for="idName">Nombre</label>
+                <input type="text" name="name" id="idName"  placeholder="Ingrese su nombre" required>
+            </div>
+            <div>
+                <label for="idLastName">Apellido</label>
+                <input type="text" name="lastName" id="idLastName" placeholder="Ingrese su apellido" required>
+            </div>
+            <div>
+                <label for="idPhone">Telefono</label>
+                <input type="number" name="phone" id="idPhone" placeholder="Ingrese su numero de tlefono" required>
+            </div>
+            <div>
+                <label for="idEmail">Email</label>
+                <input type="email" name="emai" id="idEmail" placeholder="Ingrese su email" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos adicionales</legend>
+            <div>
+                <label for="idCountry">Pais</label>
+                <select name="country" id="idCountry" required>
+                    <option value=""></option>
+                    <option value="Col">Colombia</option>
+                    <option value="Ven">Venezuela</option>
+                    <option value="Mex">Mexico</option>
+                    <option value="Arg">Argentina</option>
+                </select>
+            </div>
+            <div>
+                <label >Genero: </label>
+                <label for="idMen"> 
+                    <input type="radio" name="genero" value="men" id="idMen" required>Hombre
+                </label>
+                <label for="idWoman">
+                    <input type="radio" name="genero" value="woman" id="idWoman" >Mujer
+                </label>
+                <label for="idOther">
+                    <input type="radio" name="genero" value="other" id="idOther" >Otro
+                </label>
+            </div>
+            <div>
+                <label for="IdCheckbox">
+                    <input type="checkbox" name="acepto" value="1" id="IdCheckbox" required>acepta el tratamieto de sus Datos
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Envio de informacion</legend>
+            <input type="submit" value="Enviar">
+            <input type="reset"  value="Cancelar">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo del formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #56c988; /* Fondo verde claro */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Estilo de los fieldsets */
+fieldset {
+    border: 2px solid #ff6f20; /* Naranja */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Estilo de los legend */
+legend {
+    color: #ff6f20; /* Naranja */
+    font-weight: bold;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333; /* Texto oscuro */
+}
+
+/* Estilo de los inputs */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo de los botones */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #ff6f20; /* cambia el color al pasar el mouse */
+}
+
+/* Estilo de los radio buttons y checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+@keyframes fadeIn {
+    from { opacity : 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+        background-color: #94d8a0;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%; /* Botones ocupan todo el ancho en pantallas pequeñas */
+        margin: 5px 0; /* Espaciado entre botones */
+        margin-bottom: 10px;
+
+    }
+}
