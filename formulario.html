@@ -1,40 +1,69 @@
+
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Completo</title>
-    <link rel="stylesheet" href="styleForm.css">
+    <link rel="stylesheet" href="stylesFormulario.css">
+    <title>Document</title>
 </head>
 <body>
-
-    <h2>Formulario de Registro Completo</h2>
-    
-    <form action="Respuesta.html" method="GET">
-
-        <!-- Contenedor del campo de Nombre -->
-        <div class="form-group">
-            <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-
-        <!-- Contenedor del campo de Apellido -->
-        <div class="form-group">
-            <label for="apellido">Apellido Completo:</label>
-            <input type="text" id="apellido" name="apellido" required>
-        </div>
-
-        <!-- Contenedor del botón de Envío -->
-        <div class="form-group">
+    <form action="respuesta.html" method="get" target="_blank">
+        <fieldset>
+            <legend>Formulario Prueba</legend>
+            <div>
+                <label for="idName">Nombre</label>
+                <input type="text" name="name" id="idName"  placeholder="Ingrese su nombre" required>
+            </div>
+            <div>
+                <label for="idLastName">Apellido</label>
+                <input type="text" name="lastName" id="idLastName" placeholder="Ingrese su apellido" required>
+            </div>
+            <div>
+                <label for="idPhone">Telefono</label>
+                <input type="number" name="phone" id="idPhone" placeholder="Ingrese su numero de tlefono" required>
+            </div>
+            <div>
+                <label for="idEmail">Email</label>
+                <input type="email" name="emai" id="idEmail" placeholder="Ingrese su email" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos adicionales</legend>
+            <div>
+                <label for="idCountry">Pais</label>
+                <select name="country" id="idCountry" required>
+                    <option value=""></option>
+                    <option value="Col">Colombia</option>
+                    <option value="Ven">Venezuela</option>
+                    <option value="Mex">Mexico</option>
+                    <option value="Arg">Argentina</option>
+                </select>
+            </div>
+            <div>
+                <label >Genero: </label>
+                <label for="idMen"> 
+                    <input type="radio" name="genero" value="men" id="idMen" required>Hombre
+                </label>
+                <label for="idWoman">
+                    <input type="radio" name="genero" value="woman" id="idWoman" >Mujer
+                </label>
+                <label for="idOther">
+                    <input type="radio" name="genero" value="other" id="idOther" >Otro
+                </label>
+            </div>
+            <div>
+                <label for="IdCheckbox">
+                    <input type="checkbox" name="acepto" value="1" id="IdCheckbox" required>acepta el tratamieto de sus Datos
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Envio de informacion</legend>
             <input type="submit" value="Enviar">
-        </div>
-
-        <!-- Contenedor del botón de Cancelar -->
-        <div class="form-group">
-            <input type="reset" value="Cancelar">
-        </div>  
-
+            <input type="reset"  value="Cancelar">
+        </fieldset>
     </form>
-
 </body>
 </html>

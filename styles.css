@@ -140,3 +140,14 @@ input::placeholder {
     border: 2px dashed #aaa;
     padding: 10px;
 }
+#btnFormu{
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
