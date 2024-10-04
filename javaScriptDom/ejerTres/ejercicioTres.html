@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="stylesTres.css"> 
+</head>
+<body>
+    
+    <p>Implementa una función de búsqueda en una tabla HTML (listas). El formulario debe tener un campo
+        de texto para ingresar el término de búsqueda y un botón para realizar la búsqueda. Al hacer clic en el
+        botón, captura el valor del campo de texto y busca en la tabla las filas que coincidan con el término
+        ingresado. Dentro del HTML debe tener un contenedor de resultado indicando la cantidad de veces
+        que se repite la palabra dentro de la tabla diccionario</p>
+
+    <h1>Búsqueda en Tabla</h1>
+    <p>Ingresa un término para buscar en la tabla:</p>
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <button id="searchButton">Buscar</button>
+    <div id="resultContainer"></div> 
+
+    <table id="dictionaryTable" border="1">
+        <thead>
+            <tr>
+                <th>Palabra</th>
+                <th>Definición</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Perro</td>
+                <td>Animal doméstico de cuatro patas.</td>
+            </tr>
+            <tr>
+                <td>Gato</td>
+                <td>Animal doméstico, generalmente pequeño, conocido por su agilidad.</td>
+            </tr>
+            <tr>
+                <td>Casa</td>
+                <td>Edificio destinado a ser habitado.</td>
+            </tr>
+            <tr>
+                <td>Auto</td>
+                <td>Vehículo de motor con ruedas.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="ejercicioTres.js"></script> 
+</body>
+</html>

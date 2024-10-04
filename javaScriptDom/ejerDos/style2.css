@@ -1,0 +1,98 @@
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0; 
+    padding: 20px; 
+}
+#taskList {
+    list-style-type: none;
+    padding: 0; 
+}
+
+#taskList div {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#taskList span {
+    flex-grow: 1;
+    cursor: pointer; 
+}
+
+.completed {
+    text-decoration: line-through; 
+    color: gray; 
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.delete {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+
+.delete:hover {
+    text-decoration: underline; 
+}
+
+#taskInput {
+    width: 100%; 
+    padding: 15px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+#addTaskButton {
+    padding: 10px 15px;
+    background-color: #007BFF; 
+    color: white;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+#addTaskButton:hover {
+    background-color: #0056b3; 
+}
+@media (max-width: 600px) {
+    #taskInput {
+        font-size: 14px;
+    }
+    button, .delete {
+        padding: 8px 12px;
+        font-size: 14px; 
+    }
+    #addTaskButton {
+        width: 100%; 
+    }
+    #taskList div {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+}
